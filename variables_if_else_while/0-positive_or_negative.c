@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - Point d'entrée du programme
  * * Description: Affiche si le nombre n est positif, négatif ou nul.
