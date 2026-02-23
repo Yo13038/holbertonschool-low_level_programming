@@ -1,10 +1,9 @@
 #include<stdio.h>
-/*
-*
-* main - enter point
-*Descriptif: Write a program that prints the lowercase alphabet in reverse.
-*Return: 0 (Succes)
-*/
+/**
+ * main - prints the lowercase alphabet in reverse
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char letter;
