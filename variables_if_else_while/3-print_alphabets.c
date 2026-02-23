@@ -2,7 +2,7 @@
 /**
  * main - Point d'entrée
  * Descriptif: show the alphabet in lowercase first then uppercase.
- * Return 0 (Succes)
+ * Return: always 0 (Succes)
  */
 int main(void)
 {
