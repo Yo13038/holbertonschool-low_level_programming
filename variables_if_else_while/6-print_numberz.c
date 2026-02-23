@@ -3,7 +3,7 @@
 * main - enter point
 *
 * Descriptif: Program who print every single digit using only putchar
-* return : 0 (Succes)
+* Return: 0 (Succes)
 */
 int main(void)
 {
