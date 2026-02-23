@@ -10,7 +10,7 @@ int main(void)
 
 	for (lettre = 'a'; lettre <= 'z'; lettre++)
 	{
-		if (lettre !=q && lettre != e)
+		if (lettre !='q' && lettre !='e')
 		{
 			putchar(lettre);
 		}
