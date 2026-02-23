@@ -1,4 +1,4 @@
-#include<dstdio.h>
+#include <stdio.h>
 /**
  * main - Enter point
  *
