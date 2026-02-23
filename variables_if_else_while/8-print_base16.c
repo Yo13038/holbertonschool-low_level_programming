@@ -10,11 +10,11 @@ int main(void)
 	int number;
 	char letter;
 
-	for (number = 0; number < 10; number ++)
+	for (number = 0; number < 10; number++)
 	{
 		putchar(number + '0');
 	}
-	for (letter = 'a'; letter < 'g'; letter ++)
+	for (letter = 'a'; letter < 'g'; letter++)
 	{
 		putchar(letter);
 	}
