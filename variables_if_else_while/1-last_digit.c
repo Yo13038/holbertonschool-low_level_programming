@@ -3,8 +3,7 @@
 #include <stdio.h>
 /**
  * main - Point d'entrée
- *
- *decriptif: show with details the last number of n 
+ *decriptif: show with details the last number of n
  * Return: 0 (Succes)
  */
 int main(void)
@@ -14,7 +13,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	/* your code go there */
 	last = n % 10;
 
