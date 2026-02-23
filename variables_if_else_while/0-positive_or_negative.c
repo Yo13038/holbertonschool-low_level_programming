@@ -1,27 +1,32 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
-/*
-This program will assign a random number to the variable n each time it is executed. 
-Complete the source code in order to print whether the number stored in the variable n is positive or negative.Or if it's zero
-*/
-
+#include <time.h>
+#include <stdio.h>
+/**
+ * main - Point d'entrée du programme
+ * * Description: Affiche si le nombre n est positif, négatif ou nul.
+ * Return: Toujours 0 (Succès)
+ */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	if (n > 0){
+
+	/* Votre code commence ici */
+	if (n > 0)
+	{
 		printf("%d is positive\n", n);
 	}
-	else if (n == 0){
+	else if (n == 0)
+	{
 		printf("%d is zero\n", n);
 	}
-	else {
+	else
+	{
 		printf("%d is negative\n", n);
 	}
+
 	return (0);
 }
 
