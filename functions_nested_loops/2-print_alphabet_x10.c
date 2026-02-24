@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - Enter point
+ * print_alphabet_x10
  *
  * Descriptif: show the alphabet in lowercase letter using putchar.
- * Return: Toujours 0 (Succes)
+ * Return: Nothing
  */
 void print_alphabet_x10(void)
 {
