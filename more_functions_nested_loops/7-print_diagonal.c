@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - draws a diagonal
- *
+ *@n: the number of times the character \ should be printed
  * Return: (nothing)
  */
 void print_diagonal(int n)
