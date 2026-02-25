@@ -23,7 +23,7 @@ void print_triangle(int size)
 				_putchar(' ');
 			}
 
-			for (hashtag = 0; hashtag < row; hashtag++)
+			for (hashtag = 0; hashtag < line; hashtag++)
 			{
 				_putchar('#');
 			}
