@@ -55,7 +55,7 @@ float A = 0, B = 0, result = 0;
 	while (1)
 	{
 		printf("\n--- Simple Calculator ---\n1) Add\n2) Substract\n");
-		printf("3) Multiply\n4) Divide\n0) Quit\nSelect your option please ? ");
+		printf("3) Multiply\n4) Divide\n0) Quit\nSelect your operation please ? ");
 		scanf("%d", &choiceMenu);
 		if (choiceMenu == 0)
 		{
