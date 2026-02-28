@@ -79,8 +79,13 @@ float A = 0, B = 0, result = 0;
 			else if (choiceMenu == 3)
 				result = multiply(A, B);
 			else if (choiceMenu == 4)
-				result = divide(A, B);
-			printf("%f", result);
+			{
+				if (B == 0)
+					printf("Error: Division by zero\n");
+				else
+					result = divide(A, B);
+			}
+			printf("Result: %f", result);
 		}
 	}
 	return (0);
