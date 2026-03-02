@@ -1,6 +1,6 @@
 Green efficiency analysis: 
 
-Meesurement Method
+Mesurement Method
 
 Using the function "clock()" from the time.h library, we mesure the processor time used in the process.
 Using different variable "clock_t" we mesure: 
