@@ -68,6 +68,7 @@ float A = 0, B = 0, result = 0;
 		}
 		else if (choiceMenu > 0 && choiceMenu < 5)
 		{
+			printf("Choice: %d\n", choiceMenu);
 			printf("A: ");
 			scanf("%f", &A);
 			printf("B: ");
