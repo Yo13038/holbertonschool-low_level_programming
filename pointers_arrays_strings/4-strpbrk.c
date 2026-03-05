@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - search for a bite in a chain.
+ * _strpbrk - search for a byte in a chain.
  * @s: chain to check.
  * @accept: chain with what to search.
  * Return: s or NULL
@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				/* return the adresse when found a bite */
+				/* return the adresse when found a byte */
 				return (s + i);
 			}
 			j++;
@@ -27,6 +27,6 @@ char *_strpbrk(char *s, char *accept)
 		i++;
 	}
 
-	/* not bite found */
+	/* not byte found */
 	return (NULL);
 }
