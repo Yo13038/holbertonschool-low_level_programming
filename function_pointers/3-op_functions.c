@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "calc.h"
 /**
  * op_add - addition
  * op_sub - substract
