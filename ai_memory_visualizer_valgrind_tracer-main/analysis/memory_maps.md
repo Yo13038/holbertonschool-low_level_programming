@@ -45,3 +45,6 @@ Try to read the adress 0x0, make the processor return a violation of segmentatio
 
 Correction:
 make a condition to prevent this, type : If(ptr != NULL).
+
+CONCLUSION:
+SIGSEGV acts as the operating system's ultimate protection mechanism against illegal memory access. Without this signal, a program could accidentally overwrite another program's memory, rendering the computer completely unstable.
