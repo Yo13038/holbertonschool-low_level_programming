@@ -3,7 +3,8 @@
  * hash_table_get - Retrieves a value associated with a key in a hash table
  * @ht: The hash table to look into
  * @key: The key whose value is to be retrieved
- * Return: The value associated with the key, or NULL if the key cannot be found
+ * Return: The value associated with the key,
+ * or NULL if the key cannot be found
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
