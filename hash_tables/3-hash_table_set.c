@@ -1,7 +1,6 @@
 #include "hash_tables.h"
 #include <stdlib.h>
 #include <string.h>
-
 /**
  * hash_table_set - Adds an element to the hash table.
  * @ht: A pointer to the hash table.
@@ -25,7 +24,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	index = key_index((const unsigned char *)key, ht->size);
 
-	/* Check for collisions and update value if key already exists */
 	for (i = index; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
@@ -35,8 +33,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);
 		}
 	}
-
-	/* Create new node for the key/value pair */
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 	{
@@ -51,10 +47,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	new_node->value = value_copy;
-
-	/* Handle collision: add new node at the beginning of the list */
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
-
 	return (1);
 }
