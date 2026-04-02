@@ -2,7 +2,7 @@
 /**
  * hash_table_print - Prints a hash table
  * @ht: The hash table to print
- * 
+ *
  * Return: Nothing
  */
 
@@ -25,9 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf(", ");
 
 			printf("'%s': '%s'", node->key, node->value);
-			
 			comma = 1;
-			
 			node = node->next;
 		}
 	}
