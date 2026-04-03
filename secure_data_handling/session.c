@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "session.h"
-
 session_t *session_create(const char *id, unsigned int uid,
 	const unsigned char *data, size_t data_len)
 {
