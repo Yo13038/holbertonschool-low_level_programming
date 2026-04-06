@@ -1,51 +1,39 @@
 #include "main.h"
+
 /**
- * read_textfile - Reads a text file and prints it to the POSIX standard output.
- * @filename: A pointer to the name of the file.
- * @letters: The number of letters the function should read and print.
+ * create_file - Creates a file.
+ * @filename: A pointer to the name of the file to create.
+ * @text_content: A pointer to a string to write to the file.
  *
- * Return: The actual number of letters it could read and print.
- * 0 if the file cannot be opened or read, if filename is NULL,
- * or if write fails.
+ * Return: 1 on success, -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
-	ssize_t bytes_read, bytes_written;
-	char *buffer;
+	int fd, w, len = 0;
 
 	if (filename == NULL)
-		return (0);
+		return (-1);
 
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
+	if (text_content != NULL)
+	{
+		while (text_content[len])
+			len++;
+	}
 
-	fd = open(filename, O_RDONLY);
+	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (fd == -1)
+		return (-1);
+
+	if (text_content != NULL)
 	{
-		free(buffer);
-		return (0);
+		w = write(fd, text_content, len);
+		if (w == -1)
+		{
+			close(fd);
+			return (-1);
+		}
 	}
 
-	bytes_read = read(fd, buffer, letters);
-	if (bytes_read == -1)
-	{
-		free(buffer);
-		close(fd);
-		return (0);
-	}
-
-	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
-	if (bytes_written == -1 || bytes_written != bytes_read)
-	{
-		free(buffer);
-		close(fd);
-		return (0);
-	}
-
-	free(buffer);
 	close(fd);
-
-	return (bytes_written);
+	return (1);
 }
