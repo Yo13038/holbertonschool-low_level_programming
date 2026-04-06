@@ -8,7 +8,7 @@
  * 0 if the file cannot be opened or read, if filename is NULL,
  * or if write fails.
  */
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t bytes_read, bytes_written;
